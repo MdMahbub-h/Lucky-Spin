@@ -1,6 +1,4 @@
 import Phaser from "phaser";
-import OptionsScene from "./OptionsScene";
-import GameScene from "./GameScene";
 
 class StartScene extends Phaser.Scene {
   constructor() {
@@ -15,7 +13,7 @@ class StartScene extends Phaser.Scene {
 
     this.add
       .text(this.scale.width / 2, 180, "Welcome", {
-        fontSize: 70,
+        fontSize: 50,
         align: "center",
         lineSpacing: 8,
         color: "rgb(255,10,200)",
@@ -25,8 +23,8 @@ class StartScene extends Phaser.Scene {
       .setWordWrapWidth(600)
       .setOrigin(0.5);
     this.add
-      .text(this.scale.width / 2, 300, "Play and win the prize!!!", {
-        fontSize: 40,
+      .text(this.scale.width / 2, 280, "Play and win the prize!!!", {
+        fontSize: 30,
         align: "center",
         lineSpacing: 8,
         color: "white",
