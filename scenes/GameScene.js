@@ -115,7 +115,7 @@ class GameScene extends Phaser.Scene {
     this.wheelCover = this.add
       .sprite(this.scale.width / 2, this.scale.height / 2 - 75, "wheel-cover")
       .setScale(0.45);
-    this.wheelCover.anims.play("light");
+    // this.wheelCover.anims.play("light");
   }
 
   spinWheel() {
