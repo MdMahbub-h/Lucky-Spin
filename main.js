@@ -11,8 +11,8 @@ const scale = {
   height: 1200,
 };
 if (window.innerWidth < 600 * 1.1) {
-  scale.width = window.innerWidth * 0.9;
-  scale.height = (scale.width * 1200) / 600;
+  scale.width = window.innerWidth 
+  scale.height = window.innerHeight
 }
 
 const config = {
