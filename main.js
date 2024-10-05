@@ -8,11 +8,11 @@ import LoseScene from "./scenes/LoseScene";
 
 const scale = {
   width: 600,
-  height: 1200,
+  height: 1100,
 };
-if (window.innerWidth < 600 * 1.1) {
+if (window.innerWidth < 600) {
   scale.width = window.innerWidth 
-  scale.height = window.innerHeight
+  scale.height = (scale.width * 1100) / 600;
 }
 
 const config = {
