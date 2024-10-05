@@ -87,7 +87,7 @@ class GameScene extends Phaser.Scene {
       .image(this.scale.width / 2, this.scale.height / 2, "game-bg")
       .setScale(0.4, 0.8)
       .setAlpha(0.5);
-    this.add.sprite(80, 60, "buttons", 5).setScale(0.2);
+    this.add.sprite(this.scale.width / 9, 60, "buttons", 5).setScale(0.2);
     this.add.image(this.scale.width - 90, 60, "bar").setScale(0.48, 1.2);
     this.add.image(this.scale.width - 150, 60, "diamond").setScale(0.3);
 
@@ -315,11 +315,16 @@ class GameScene extends Phaser.Scene {
   }
 
   selectDiamond() {
-    this.bidText = this.add.text(62, (this.scale.height * 4.07) / 5, "Bid : ", {
-      font: "bold 32px Arial",
-      align: "center",
-      color: "rgb(255,250,250)",
-    });
+    this.bidText = this.add.text(
+      this.scale.width / 12,
+      (this.scale.height * 4.05) / 5,
+      "Bid: ",
+      {
+        font: "bold 32px Arial",
+        align: "center",
+        color: "rgb(255,250,250)",
+      }
+    );
     for (let i = 0; i < 4; i++) {
       this.add
         .image(
