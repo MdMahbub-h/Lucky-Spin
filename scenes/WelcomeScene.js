@@ -6,37 +6,37 @@ class WelcomeScene extends Phaser.Scene {
     super("WelcomeScene");
   }
   preload() {
-    this.load.image("background", "/assets/spin1/welcome-bg.jpg");
-    this.load.image("welcome-bg", "/assets/spin1/welcome-bg.jpg");
-    this.load.image("start-bg", "/assets/spin1/start-bg.jpg");
-    this.load.image("game-bg", "/assets/spin1/game-bg.jpg");
-    this.load.image("option-box", "/assets/spin1/option-box.png");
+    this.load.image("background", "assets/spin1/welcome-bg.jpg");
+    this.load.image("welcome-bg", "assets/spin1/welcome-bg.jpg");
+    this.load.image("start-bg", "assets/spin1/start-bg.jpg");
+    this.load.image("game-bg", "assets/spin1/game-bg.jpg");
+    this.load.image("option-box", "assets/spin1/option-box.png");
     this.load.image("manu-box", "/assets/spin1/manu-box.png");
-    this.load.image("btn", "/assets/spin1/btn.png");
-    this.load.spritesheet("buttons", "/assets/spin1/buttons.png", {
+    this.load.image("btn", "assets/spin1/btn.png");
+    this.load.spritesheet("buttons", "assets/spin1/buttons.png", {
       frameWidth: 1200 / 3,
       frameHeight: 1165 / 3,
     });
 
-    this.load.image("icon", "/assets/icon.png");
-    this.load.image("wheel", "/assets/spin1/wheel.png");
+    this.load.image("icon", "assets/icon.png");
+    this.load.image("wheel", "assets/spin1/wheel.png");
     this.load.spritesheet(
       "wheel-cover",
-      "/assets/spin1/wheel-cover.png",
+      "assets/spin1/wheel-cover.png",
       {
         frameWidth: 998,
         frameHeight: 1216,
       }
     );
-    this.load.spritesheet("foods", "/public/assets/spin1/foods.png", {
+    this.load.spritesheet("foods", "assets/spin1/foods.png", {
       frameWidth: 150,
       frameHeight: 120,
     });
 
-    this.load.image("middle-circle", "/assets/spin1/middle-circle.png");
-    this.load.image("pin", "/assets/spin1/pin.png");
-    this.load.image("diamond", /assets/spin1/diamond.png");
-    this.load.image("bar", "/assets/spin1/bar.png");
+    this.load.image("middle-circle", "assets/spin1/middle-circle.png");
+    this.load.image("pin", "assets/spin1/pin.png");
+    this.load.image("diamond", "assets/spin1/diamond.png");
+    this.load.image("bar", "assets/spin1/bar.png");
   }
 
   create() {
