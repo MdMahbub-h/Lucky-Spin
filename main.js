@@ -8,12 +8,12 @@ import LoseScene from "./scenes/LoseScene";
 
 const scale = {
   width: 600,
-  height: 1000,
+  height: 1200,
 };
-// if (window.innerWidth < 1100) {
-//   scale.width = window.innerWidth * 0.9;
-//   scale.height = (scale.width * 800) / 1000;
-// }
+if (window.innerWidth < 600 * 1.1) {
+  scale.width = window.innerWidth * 0.9;
+  scale.height = (scale.width * 1200) / 600;
+}
 
 const config = {
   type: Phaser.WEBGL,
