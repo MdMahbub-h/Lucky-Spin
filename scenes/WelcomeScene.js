@@ -49,7 +49,7 @@ class WelcomeScene extends Phaser.Scene {
 
     this.add
       .text(this.scale.width / 2, this.scale.height - 160, "Lucky Draw", {
-        fontSize: 70,
+        fontSize: 60,
         align: "center",
         lineSpacing: 8,
         color: "rgb(255,200,200)",
